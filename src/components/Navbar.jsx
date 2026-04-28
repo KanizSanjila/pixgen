@@ -35,9 +35,9 @@ const Navbar = () => {
             <li>
               <Link href={"/signup"}>SignUp</Link>
             </li> 
-            {/* /* <li>
+             <li>
               <Link href={"/signin"}>SignIn</Link>
-            </li> */}
+            </li>
           </ul>
         </div>
       </nav>
