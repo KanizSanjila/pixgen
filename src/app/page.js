@@ -2,7 +2,7 @@ import Banner from "@/components/Banner";
 import Card from "@/components/Card";
 
 export default async function Home() {
-   const res = await fetch("http://localhost:5000/images")
+   const res = await fetch("https://json-server-4u0i.onrender.com/images")
    const data= await res.json();
    const images = data.slice(0,7)
   //  console.log(images)
