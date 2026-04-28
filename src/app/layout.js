@@ -1,3 +1,6 @@
+// import dns from "node.dns";
+// dns.setServers(["8.8.8.8" , "8.8.4.4"]);
+
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -18,9 +21,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${outfitFont.className}  h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body>
         <Navbar></Navbar>
-        {children}
+        <main className="max-w-7xl mx-auto">
+          {children}
+        </main>
         <Footer></Footer>
         </body>
     </html>

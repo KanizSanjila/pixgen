@@ -3,8 +3,9 @@ import Card from "@/components/Card";
 
 export default async function Home() {
    const res = await fetch("http://localhost:5000/images")
-   const images= await res.json();
-   console.log(images)
+   const data= await res.json();
+   const images = data.slice(0,7)
+  //  console.log(images)
   return (
    <div>
      <Banner></Banner>

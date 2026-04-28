@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="border-b px-2">
+    <div className=" px-2">
       <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
         <div className="flex gap-2 items-center">
           <Image
@@ -23,16 +23,19 @@ const Navbar = () => {
             <Link href={"/"}>Home</Link>
           </li>
           <li>
+            <Link href={"/all-photos"}>All Photo</Link>
+          </li>
+          <li>
             <Link href={"/pricing"}>Pricing</Link>
           </li>
         </ul>
 
         <div className="flex gap-4">
           <ul className="flex items-center  text-sm">
-            {/* <li>
+            <li>
               <Link href={"/signup"}>SignUp</Link>
-            </li> */}
-            {/* <li>
+            </li> 
+            {/* /* <li>
               <Link href={"/signin"}>SignIn</Link>
             </li> */}
           </ul>
